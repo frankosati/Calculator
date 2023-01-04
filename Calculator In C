@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+int main() {
+    int num1, num2;
+    int intiger;
+    char op;
+    while(1){
+    
+        printf("\nCalculator ");
+        printf("\nEnter First Number: ");
+        scanf("%d", &num1);
+        printf("\nEnter Second Number: ");
+        scanf("%d", &num2);
+            
+            printf("Addition type +\n");
+            printf("Substraction type -\n");
+            printf("Multiplication type *\n");
+            printf("To EXIT the program type e (exit)\n");
+            printf("Type an Action :");
+            scanf(" %c", &op);
+            
+    switch(op) {
+        case '+':
+            printf("%d + %d = %d\n", num1, num2, num1 + num2);
+            break;
+        case '-':
+            printf("%d - %d = %d\n", num1, num2, num1 - num2);
+            break;
+        case '*':
+            printf("%d * %d = %d\n", num1, num2, num1 * num2);
+            break;
+        case 'e':
+            printf("Program exiting...\n");
+            break;
+        default:
+            printf("Invalid operation\n");
+            break;
+    }
+
+     printf("Enter an integer: ");
+        scanf("%d", &intiger);
+
+    if(intiger % 2 == 0)
+        printf("%d is even.", intiger);
+    else
+        printf("%d is odd.", intiger);
+    
+
+}
+    return 0;
+}
